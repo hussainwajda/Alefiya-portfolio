@@ -2095,3 +2095,143 @@ span.error {
 .gsap-reveal-img .reveal-wrap .reveal-content .portfolio-item-content h3 {
   margin-bottom: 10px;
 }
+
+
+.project-section {
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+  padding: 4rem 0;
+}
+
+.project-container {
+  border-left: 1px solid #333 !important;
+  border-right: 1px solid #333 !important;
+}
+
+.project-info {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+
+.project-category {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+.project-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.project-metadata {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.metadata-item {
+  margin-right: 2rem;
+}
+
+.metadata-label {
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+.metadata-value {
+  font-size: 1rem;
+}
+
+.project-link {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.project-link:hover {
+  background-color: #fff;
+  color: #000 !important;
+}
+
+.project-image {
+  height: 100%;
+  min-height: 400px;
+  overflow: hidden;
+  border-left: 1px solid #333;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-image:hover img {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .project-section {
+      padding: 2rem 0;
+  }
+
+  .project-container {
+      border: none;
+  }
+
+  .project-info {
+      padding: 1.5rem;
+      text-align: center;
+      min-height: auto;
+  }
+
+  .project-title {
+      font-size: 2rem;
+  }
+
+  .project-metadata {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 4rem;
+  }
+
+  .metadata-item {
+      margin-right: 0;
+      margin-bottom: 1rem;
+      text-align: center;
+  }
+
+  .project-link {
+      position: relative;
+      margin: 2rem auto;
+      bottom: auto;
+      right: auto;
+  }
+
+  .project-image {
+      min-height: 250px;
+      border-left: none;
+      margin: 0 auto;
+      max-width: 90%;
+  }
+}
