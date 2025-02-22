@@ -1,13 +1,14 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Personal Porfolio &mdash;</title>
+    <title>Alefiya's Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <meta name="description" content="">
     <meta name="keywords" content="html, css, javascript, jquery">
     <meta name="author" content="">
+    <meta property="og:image" content="images/svg/logo_a.svg" />
 
     <link rel="stylesheet" href="css/vendor/icomoon/style.css">
     <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
@@ -55,7 +56,7 @@
           <div class="row align-items-center justify-content-between text-left">
             <div class="col-md-5 text-right">
               <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
-                <li class="has-children">
+                <li>
                   <a href="#home-section" class="nav-link">Home</a>
   
                 </li>
@@ -64,7 +65,7 @@
               </ul>
             </div>
             <div class="site-logo pos-absolute">
-              <a href="index.html" class="unslate_co--site-logo"><span>Portfolio</span></a>
+              <a href="index.html" class="unslate_co--site-logo"><img src="images/svg/Logo.svg" alt="logo" class="img-fluid" style="width: 150px; height: 180px;"/></a>
             </div>
             <div class="col-md-5 text-right text-lg-left">
               <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
@@ -83,12 +84,12 @@
 
       </nav>
       <!-- END nav -->
-
-      <div class="cover-v1 jarallax" id="home-section">
-        <video autoplay loop muted class="video-background">
+      <div class="cover-v1 jarallax" id="hero-section">
+        <!-- <video autoplay loop muted class="video-background">
             <source src="images/bg_video2.mp4" type="video/mp4">
             Your browser does not support the video tag.
-        </video>
+        </video> -->
+        <img src="images/grid_white_1-bbg.png" alt="Image" id="cover-img" class="img-fluid jarallax-img opacity-1">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-7 mx-auto text-center">
@@ -98,7 +99,7 @@
             </div>
         </div>
     
-        <a href="#portfolio-section" class="mouse-wrap smoothscroll">
+        <a href="#project-section" class="mouse-wrap smoothscroll">
             <span class="mouse">
                 <span class="scroll"></span>
             </span>
@@ -107,30 +108,170 @@
     </div>
       <!-- END .cover-v1 -->
 
-
-
-
-
-      <div class="unslate_co--section">
+      <!-- BEGIN Project  -->
+      <section class="project-section" id="project-section">
         <div class="container">
-          <div class="owl-carousel logo-slider">
-            <div class="logo-v1 gsap-reveal">
-              <img src="images/figmapng.png" alt="Image" class="img-fluid">
+            <div class="section-heading-wrap text-center mb-5">
+                <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">Projects</span></h2>
+                <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
             </div>
-            <div class="logo-v1 gsap-reveal">
-              <img src="images/Sketch.png" alt="Image" class="img-fluid">
+            
+            <!-- Project 1 -->
+            <div class="row align-items-center project-container">
+                <div class="col-lg-6 project-content">
+                    <div class="project-info">
+                        <!-- Your existing Project 1 content -->
+                        <span class="gsap-reveal">
+                          <div>
+                              <div class="project-category">Project 1</div>
+                              <h2 class="project-title">Baguette</h2>
+                          </div>
+                          <div class="project-metadata">
+                              <div class="d-flex flex-wrap">
+                                  <div class="metadata-item">
+                                      <div class="metadata-label">CLIENT</div>
+                                      <div class="metadata-value">Astudio</div>
+                                  </div>
+                                  <div class="metadata-item">
+                                      <div class="metadata-label">YEAR</div>
+                                      <div class="metadata-value">2024</div>
+                                  </div>
+                              </div>
+                          </div>
+                        </span>
+                        <a href="projects/project1.html" class="project-link text-decoration-none text-white">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                              <polyline points="12 5 19 12 12 19"></polyline>
+                          </svg>
+                      </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 project-image-container">
+                    <div class="project-image gsap-reveal-img">
+                        <img src="document/project1_cover.png" alt="Project Preview">
+                    </div>
+                </div>
             </div>
-            <div class="logo-v1 gsap-reveal">
-              <img src="images/invision.png" alt="Image" class="img-fluid">
+    
+            <!-- Project 2 -->
+            <div class="row align-items-center project-container">
+                <div class="col-lg-6 project-content">
+                    <div class="project-info">
+                        <!-- Your existing Project 2 content -->
+                        <span class="gsap-reveal">
+                          <div>
+                              <div class="project-category">Project 2</div>
+                              <h2 class="project-title">Amaia</h2>
+                          </div>
+                          <div class="project-metadata">
+                              <div class="d-flex flex-wrap">
+                                  <div class="metadata-item">
+                                      <div class="metadata-label">CLIENT</div>
+                                      <div class="metadata-value">------</div>
+                                  </div>
+                                  <div class="metadata-item">
+                                      <div class="metadata-label">YEAR</div>
+                                      <div class="metadata-value">2024</div>
+                                  </div>
+                              </div>
+                          </div>
+                        </span>
+                        <a href="projects/project2.html" class="project-link text-decoration-none text-white">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                              <polyline points="12 5 19 12 12 19"></polyline>
+                          </svg>
+                      </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 project-image-container order-lg-1">
+                    <div class="project-image gsap-reveal-img">
+                        <img src="document/Cover amaia.png" alt="Project Preview">
+                    </div>
+                </div>
             </div>
-            <div class="logo-v1 gsap-reveal">
-              <img src="images/logo-adobe.png" alt="Image" class="img-fluid">
+    
+            <!-- Project 3 -->
+            <div class="row align-items-center project-container">
+                <div class="col-lg-6 project-content">
+                    <div class="project-info">
+                        <!-- Your existing Project 3 content -->
+                        <span class="gsap-reveal">
+                          <div>
+                              <div class="project-category">Project 3</div>
+                              <h2 class="project-title">Title</h2>
+                          </div>
+                          <div class="project-metadata">
+                              <div class="d-flex flex-wrap">
+                                  <div class="metadata-item">
+                                      <div class="metadata-label">CLIENT</div>
+                                      <div class="metadata-value">------</div>
+                                  </div>
+                                  <div class="metadata-item">
+                                      <div class="metadata-label">YEAR</div>
+                                      <div class="metadata-value">2024</div>
+                                  </div>
+                              </div>
+                          </div>
+                        </span>
+                        <a href="projects/project3.html" class="project-link text-decoration-none text-white">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                              <polyline points="12 5 19 12 12 19"></polyline>
+                          </svg>
+                      </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 project-image-container">
+                    <div class="project-image gsap-reveal-img">
+                        <img src="document/coming soon.jpg" alt="Project Preview">
+                    </div>
+                </div>
             </div>
-          </div>
+    
+            <!-- Project 4 -->
+            <div class="row align-items-center project-container">
+                <div class="col-lg-6 project-content">
+                    <div class="project-info">
+                        <!-- Your existing Project 4 content -->
+                        <span class="gsap-reveal">
+                          <div>
+                              <div class="project-category">Project 4</div>
+                              <h2 class="project-title">Title</h2>
+                          </div>
+                          <div class="project-metadata">
+                              <div class="d-flex flex-wrap">
+                                  <div class="metadata-item">
+                                      <div class="metadata-label">CLIENT</div>
+                                      <div class="metadata-value">------</div>
+                                  </div>
+                                  <div class="metadata-item">
+                                      <div class="metadata-label">YEAR</div>
+                                      <div class="metadata-value">2024</div>
+                                  </div>
+                              </div>
+                          </div>
+                        </span>
+                        <a href="projects/project4.html" class="project-link text-decoration-none text-white">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                              <polyline points="12 5 19 12 12 19"></polyline>
+                          </svg>
+                      </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 project-image-container order-lg-1">
+                    <div class="project-image gsap-reveal-img">
+                        <img src="document/coming soon.jpg" alt="Project Preview">
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
+<!-- END Projects -->
 
-
+<!-- About Begin -->
       <div class="unslate_co--section" id="about-section">
         <div class="container">
           
@@ -161,7 +302,48 @@
           </div>
         </div>
       </div>
+<!-- About End -->
 
+<!-- Tools Begin -->
+<div class="unslate_co--section">
+  <div class="container">
+    <div class="owl-carousel logo-slider">
+      <div class="logo-v1 gsap-reveal p-3">
+        <img src="images/tools-svg/figma.svg" alt="Image" class="img-fluid">
+      </div>
+      <div class="logo-v1 gsap-reveal p-3">
+        <img src="images/tools-svg/sketch.svg" alt="Image" class="img-fluid">
+      </div>
+      <div class="logo-v1 gsap-reveal p-3">
+        <img src="images/tools-svg/invision.svg" alt="Image" class="img-fluid">
+      </div>
+      <div class="logo-v1 gsap-reveal p-3">
+        <img src="images/tools-svg/clickUp.svg" alt="Image" class="img-fluid">
+      </div>
+      <div class="logo-v1 gsap-reveal p-3">
+        <img src="images/tools-svg/illustrator.svg" alt="Image" class="img-fluid">
+      </div>
+      <div class="logo-v1 gsap-reveal p-3">
+        <img src="images/tools-svg/miro.svg" alt="Image" class="img-fluid">
+      </div>
+      <div class="logo-v1 gsap-reveal p-3">
+        <img src="images/tools-svg/notion.svg" alt="Image" class="img-fluid">
+      </div>
+      <div class="logo-v1 gsap-reveal p-3">
+        <img src="images/tools-svg/slack.svg" alt="Image" class="img-fluid">
+      </div>
+      <div class="logo-v1 gsap-reveal p-3">
+        <img src="images/tools-svg/Jira.svg" alt="Image" class="img-fluid">
+      </div>
+      <div class="logo-v1 gsap-reveal p-3">
+        <img src="images/tools-svg/photoshop.svg" alt="Image" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Tools End -->
+
+<!-- Professional Skills Begin -->
       <div class="unslate_co--section" id="services-section">
         <div class="container">
 
@@ -174,30 +356,30 @@
             <div class="col-md-6 col-lg-4 mb-4 text-center">
               <div class="feature-v1" data-aos="fade-up" data-aos-delay="0">
                 <div class="wrap-icon mb-3">
-                  <img src="images/svg/001-options.svg" alt="Image" width="45">
+                  <img src="images/new svg/sysdes.svg" alt="Image" width="45">
                 </div>
                 <h3>Design <br> System</h3>
                 <p>Building a cohesive framework of reusable components and guidelines for consistent designs.</p>
               </div> 
             </div>
-            <div class="col-md-6 col-lg-4 mb-4 text-center">
+            <!-- <div class="col-md-6 col-lg-4 mb-4 text-center">
               <div class="feature-v1" data-aos="fade-up" data-aos-delay="100">
                 <div class="wrap-icon mb-3">
-                  <img src="images/svg/002-chat.svg" alt="Icon" width="45">
+                  <img src="images/new svg/webdes.svg" alt="Icon" width="45">
                 </div>
                 <h3>Web <br> Design</h3>
                 <p>Crafting visually appealing and user-friendly layouts for websites. </p>
               </div> 
-            </div>
-            <div class="col-md-6 col-lg-4 mb-4 text-center">
+            </div> -->
+            <!-- <div class="col-md-6 col-lg-4 mb-4 text-center">
               <div class="feature-v1" data-aos="fade-up" data-aos-delay="200">
                 <div class="wrap-icon mb-3">
-                  <img src="images/svg/003-contact-book.svg" alt="Image" class="img-fluid" width="45">
+                  <img src="images/new svg/UX.svg" alt="Image" class="img-fluid" width="45">
                 </div>
                 <h3>User <br> Experience</h3>
                 <p>Enhancing user satisfaction by improving usability and accessibility. </p>
               </div> 
-            </div>
+            </div> -->
 
             <div class="col-md-6 col-lg-4 mb-4 text-center">
               <div class="feature-v1" data-aos="fade-up" data-aos-delay="0">
@@ -226,7 +408,7 @@
                 <p>Laying out the structure and visual tone of a design project. </p>
               </div> 
             </div>
-            <div class="col-md-6 col-lg-4 mb-4 text-center">
+            <!-- <div class="col-md-6 col-lg-4 mb-4 text-center">
               <div class="feature-v1" data-aos="fade-up" data-aos-delay="0">
                 <div class="wrap-icon mb-3">
                   <img src="images/svg/004-percentage.svg" alt="Image" width="45">
@@ -234,7 +416,7 @@
                 <h3>Micro <br> Interactions</h3>
                 <p>Designing subtle animations and feedback for better user engagement. </p>
               </div> 
-            </div>
+            </div> -->
             <div class="col-md-6 col-lg-4 mb-4 text-center">
               <div class="feature-v1" data-aos="fade-up" data-aos-delay="100">
                 <div class="wrap-icon mb-3">
@@ -257,6 +439,7 @@
           </div>
         </div>
       </div>
+<!-- Professional Skills End -->
 
       <div class="unslate_co--section section-counter" id="skills-section">
         <div class="container">
@@ -379,170 +562,8 @@
       </div>
       <!-- END testimonial -->
 
-      <!-- BEGIN Project  -->
-      <section class="project-section">
-        <div class="container">
-            <div class="section-heading-wrap text-center mb-5">
-                <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">Projects</span></h2>
-                <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
-            </div>
-            
-            <!-- Project 1 -->
-            <div class="row align-items-center project-container">
-                <div class="col-lg-6 project-content">
-                    <div class="project-info">
-                        <!-- Your existing Project 1 content -->
-                        <span class="gsap-reveal">
-                          <div>
-                              <div class="project-category">Project 1</div>
-                              <h2 class="project-title">Baguette</h2>
-                          </div>
-                          <div class="project-metadata">
-                              <div class="d-flex flex-wrap">
-                                  <div class="metadata-item">
-                                      <div class="metadata-label">CLIENT</div>
-                                      <div class="metadata-value">Astudio</div>
-                                  </div>
-                                  <div class="metadata-item">
-                                      <div class="metadata-label">YEAR</div>
-                                      <div class="metadata-value">2024</div>
-                                  </div>
-                              </div>
-                          </div>
-                        </span>
-                        <a href="projects/project1.html" class="project-link text-decoration-none text-white">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                              <line x1="5" y1="12" x2="19" y2="12"></line>
-                              <polyline points="12 5 19 12 12 19"></polyline>
-                          </svg>
-                      </a>
-                    </div>
-                </div>
-                <div class="col-lg-6 project-image-container">
-                    <div class="project-image gsap-reveal-img">
-                        <img src="document/image1x1.png" alt="Project Preview">
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Project 2 -->
-            <div class="row align-items-center project-container project-reversed">
-                <div class="col-lg-6 project-content order-lg-2">
-                    <div class="project-info">
-                        <!-- Your existing Project 2 content -->
-                        <span class="gsap-reveal">
-                          <div>
-                              <div class="project-category">Project 2</div>
-                              <h2 class="project-title">Title</h2>
-                          </div>
-                          <div class="project-metadata">
-                              <div class="d-flex flex-wrap">
-                                  <div class="metadata-item">
-                                      <div class="metadata-label">CLIENT</div>
-                                      <div class="metadata-value">------</div>
-                                  </div>
-                                  <div class="metadata-item">
-                                      <div class="metadata-label">YEAR</div>
-                                      <div class="metadata-value">2024</div>
-                                  </div>
-                              </div>
-                          </div>
-                        </span>
-                        <a href="projects/project2.html" class="project-link text-decoration-none text-white">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                              <line x1="5" y1="12" x2="19" y2="12"></line>
-                              <polyline points="12 5 19 12 12 19"></polyline>
-                          </svg>
-                      </a>
-                    </div>
-                </div>
-                <div class="col-lg-6 project-image-container order-lg-1">
-                    <div class="project-image gsap-reveal-img">
-                        <img src="document/image1x1.png" alt="Project Preview">
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Project 3 -->
-            <div class="row align-items-center project-container">
-                <div class="col-lg-6 project-content">
-                    <div class="project-info">
-                        <!-- Your existing Project 3 content -->
-                        <span class="gsap-reveal">
-                          <div>
-                              <div class="project-category">Project 3</div>
-                              <h2 class="project-title">Title</h2>
-                          </div>
-                          <div class="project-metadata">
-                              <div class="d-flex flex-wrap">
-                                  <div class="metadata-item">
-                                      <div class="metadata-label">CLIENT</div>
-                                      <div class="metadata-value">------</div>
-                                  </div>
-                                  <div class="metadata-item">
-                                      <div class="metadata-label">YEAR</div>
-                                      <div class="metadata-value">2024</div>
-                                  </div>
-                              </div>
-                          </div>
-                        </span>
-                        <a href="projects/project3.html" class="project-link text-decoration-none text-white">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                              <line x1="5" y1="12" x2="19" y2="12"></line>
-                              <polyline points="12 5 19 12 12 19"></polyline>
-                          </svg>
-                      </a>
-                    </div>
-                </div>
-                <div class="col-lg-6 project-image-container">
-                    <div class="project-image gsap-reveal-img">
-                        <img src="document/image1x1.png" alt="Project Preview">
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Project 4 -->
-            <div class="row align-items-center project-container project-reversed">
-                <div class="col-lg-6 project-content order-lg-2">
-                    <div class="project-info">
-                        <!-- Your existing Project 4 content -->
-                        <span class="gsap-reveal">
-                          <div>
-                              <div class="project-category">Project 4</div>
-                              <h2 class="project-title">Title</h2>
-                          </div>
-                          <div class="project-metadata">
-                              <div class="d-flex flex-wrap">
-                                  <div class="metadata-item">
-                                      <div class="metadata-label">CLIENT</div>
-                                      <div class="metadata-value">------</div>
-                                  </div>
-                                  <div class="metadata-item">
-                                      <div class="metadata-label">YEAR</div>
-                                      <div class="metadata-value">2024</div>
-                                  </div>
-                              </div>
-                          </div>
-                        </span>
-                        <a href="projects/project4.html" class="project-link text-decoration-none text-white">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                              <line x1="5" y1="12" x2="19" y2="12"></line>
-                              <polyline points="12 5 19 12 12 19"></polyline>
-                          </svg>
-                      </a>
-                    </div>
-                </div>
-                <div class="col-lg-6 project-image-container order-lg-1">
-                    <div class="project-image gsap-reveal-img">
-                        <img src="document//image1x1.png" alt="Project Preview">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-<!-- END Project -->      
-
+      <!-- Contact Begin -->
       <div class="unslate_co--section" id="contact-section">
         <div class="container">
           <div class="section-heading-wrap text-center mb-5">
@@ -554,7 +575,7 @@
           <div class="row justify-content-between">
             
             <div class="col-md-6">
-              <form method="post" class="form-outline-style-v1" id="contactForm">
+              <form method="post" action="https://formspree.io/f/mpwqnlgj" class="form-outline-style-v1" id="contactForm">
                 <div class="form-group row mb-0">
 
                   <div class="col-lg-6 form-group gsap-reveal">
@@ -601,11 +622,11 @@
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
-      </div>
+      <!-- Contact End -->
+  </div>
        <!-- END .unslate_co-site-inner -->
 
       <footer class="unslate_co--footer unslate_co--section">
@@ -635,8 +656,6 @@
           </div>
         </div>
       </footer>
-
-      
     </div>
 
     

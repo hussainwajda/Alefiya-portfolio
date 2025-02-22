@@ -6,6 +6,7 @@ body {
   line-height: 30px;
   font-weight: 300;
   position: relative;
+  overflow-x: hidden;
 }
 
 body:before {
@@ -1375,6 +1376,16 @@ figure.dotted-bg:before {
   }
 }
 
+@media (max-width: 500px) {
+  .testimonial-v1 .testimonial-inner-bg {
+    min-height: 600px !important;
+    max-height: 600px !important;
+    font-size: 14px;
+    line-height: 26px;
+    padding: 15px 15px 25px 15px;
+  }
+}
+
 .testimonial-v1 .testimonial-inner-bg .quote {
   display: block;
   font-size: 80px;
@@ -2025,6 +2036,10 @@ span.error {
   border-right: 1px solid #222;
 }
 
+#hero-section #cover-img {
+  opacity: 30%;
+}
+
 .gsap-reveal {
   position: relative;
   display: inline-block;
@@ -2137,8 +2152,8 @@ span.error {
 }
 
 .project-container {
-  border-left: 1px solid #333 !important;
-  border-right: 1px solid #333 !important;
+  border: 1px solid #333 !important;
+  
 }
 
 .project-info {
@@ -2205,10 +2220,13 @@ span.error {
 }
 
 .project-image {
+  display: flex;
   height: 100%;
-  min-height: 400px;
+  min-height: 310px;
   overflow: hidden;
   border-left: 1px solid #333;
+  align-items: center;
+  margin-right: -15px;
 }
 
 .project-image img {
@@ -2219,7 +2237,7 @@ span.error {
 }
 
 .project-image:hover img {
-  transform: scale(1.05);
+  transform: scale(3.05);
 }
 
 @media (max-width: 768px) {
@@ -2261,7 +2279,7 @@ span.error {
   }
 
   .project-image {
-      min-height: 250px;
+      min-height: 220px;
       border-left: none;
       margin: 0 auto;
       max-width: 90%;
@@ -2284,4 +2302,80 @@ span.error {
   z-index: -10; /* Places the video behind other content */
   transform: translate(-50%, -50%); /* Centers the video */
   object-fit: cover; /* Ensures the video covers the entire area */
+}
+
+/* tools */
+/* Container for the logo slider */
+.logo-slider {
+  display: flex;
+  justify-content: center; /* Center logos horizontally */
+  align-items: center; /* Center logos vertically */
+  flex-wrap: wrap; /* Allow logos to wrap on smaller screens */
+}
+
+/* Individual logo styles */
+.logo-v1 {
+  display: flex;
+  justify-content: center; /* Center the image within the logo container */
+  align-items: center; /* Center the image vertically */
+  padding: 10px; /* Add padding around each logo */
+  flex: 0 0 100px; /* Set a base width for each logo */
+  width: 200px; /* Set a maximum width for logos */
+  height: 100px; /* Set a maximum height for logos */
+}
+
+/* Image styles */
+.logo-v1 img {
+  width: 100%; /* Make the image take the full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the image fits within the container */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .logo-v1 {
+    flex: 0 0 80px; /* Reduce the base width for smaller screens */
+    width: 120px; /* Set a maximum width for logos on small screens */
+    height: 120px; /* Set a maximum height for logos on small screens */
+  }
+}
+
+/* uploading soon section*/
+.uploading-soon-section {
+  padding: 100px 0; /* Adjust padding as needed */
+  background-color: #000000; /* Example background color */
+  text-align: center;
+}
+
+.uploading-soon-content {
+  max-width: 800px; /* Adjust max-width for responsiveness */
+  margin: 0 auto;
+}
+
+.uploading-soon-heading {
+  font-size: 3rem; /* Adjust font size */
+  font-weight: bold;
+  color: #343a40; /* Example text color */
+  margin-bottom: 20px;
+}
+
+.uploading-soon-message {
+  font-size: 1.2rem; /* Adjust font size */
+  color: #6c757d; /* Example text color */
+}
+
+/* Optional: Add some animation */
+.uploading-soon-heading {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
