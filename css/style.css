@@ -182,7 +182,7 @@ a, a:hover {
 }
 
 .unslate_co--site-nav .unslate_co--site-logo {
-  font-size: 1.7rem;
+  font-size: 1rem;
   color: #fff;
   font-weight: 700;
 }
@@ -2037,7 +2037,7 @@ span.error {
 }
 
 #hero-section #cover-img {
-  opacity: 30%;
+  opacity: 20%;
 }
 
 .gsap-reveal {
