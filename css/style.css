@@ -745,7 +745,7 @@ a, a:hover {
 }
 
 .cover-v1 .heading {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 900;
   color: #fff;
 }
@@ -773,7 +773,7 @@ a, a:hover {
 }
 
 .cover-v1 .subheading {
-  font-size: 33px;
+  font-size: 27px;
   color: #fff;
 }
 
@@ -1343,7 +1343,9 @@ figure.dotted-bg:before {
 
 .testimonial-v1 {
   text-align: center;
+  flex-direction: column;
   z-index: 9;
+ 
 }
 
 .testimonial-v1 .testimonial-inner-bg {
@@ -2308,10 +2310,40 @@ span.error {
 /* Container for the logo slider */
 .logo-slider {
   display: flex;
-  justify-content: center; /* Center logos horizontally */
+  justify-content: center; 
   align-items: center; /* Center logos vertically */
   flex-wrap: wrap; /* Allow logos to wrap on smaller screens */
 }
+
+.logo-slider-wrap1 {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.logo-slider-inner2 {
+  display: flex;
+  width: max-content;
+  animation: scrollLinear 30s linear infinite;
+}
+
+.logo-item {
+  flex-shrink: 0;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  padding: 1rem;
+}
+
+@keyframes scrollLinear {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 
 /* Individual logo styles */
 .logo-v1 {
@@ -2379,3 +2411,4 @@ span.error {
       transform: translateY(0);
   }
 }
+

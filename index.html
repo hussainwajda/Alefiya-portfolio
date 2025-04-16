@@ -94,7 +94,7 @@
             <div class="row align-items-center">
                 <div class="col-md-7 mx-auto text-center">
                     <h1 class="heading gsap-reveal-hero">Hey! I'm</h1>
-                    <h2 class="subheading gsap-reveal-hero"><span class="text-primary">Alefiya Murtaza</span>, A UI/UX Designer Based In Dubai, UAE</h2>
+                    <h2 class="subheading gsap-reveal-hero"><span class="text-primary">Alefiya Murtaza</span>, A UI/UX Designer Based In<br> Dubai, UAE</h2>
                 </div>
             </div>
         </div>
@@ -148,6 +148,37 @@
 </div>
 <!-- Tools End -->
 
+<div class="unslate_co--section">
+  <div class="logo-slider-wrap1">
+    <div class="logo-slider-inner2" id="logoSlider">
+      <!-- First set -->
+      <div class="logo-item"><img src="images/tools-svg/figma.svg" class="img-fluid"></div>
+      <div class="logo-item"><img src="images/tools-svg/sketch.svg" class="img-fluid"></div>
+      <div class="logo-item"><img src="images/tools-svg/invision.svg" class="img-fluid"></div>
+      <div class="logo-item"><img src="images/tools-svg/clickUp.svg" class="img-fluid"></div>
+      <div class="logo-item"><img src="images/tools-svg/illustrator.svg" class="img-fluid"></div>
+      <div class="logo-item"><img src="images/tools-svg/miro.svg" class="img-fluid"></div>
+      <div class="logo-item"><img src="images/tools-svg/notion.svg" class="img-fluid"></div>
+      <div class="logo-item"><img src="images/tools-svg/slack.svg" class="img-fluid"></div>
+      <div class="logo-item"><img src="images/tools-svg/Jira.svg" class="img-fluid"></div>
+      <div class="logo-item"><img src="images/tools-svg/photoshop.svg" class="img-fluid"></div>
+
+      <!-- Duplicate set -->
+      <div class="logo-item"><img src="images/tools-svg/figma.svg" class="img-fluid"></div>
+      <div class="logo-item"><img src="images/tools-svg/sketch.svg" class="img-fluid"></div>
+      <div class="logo-item"><img src="images/tools-svg/invision.svg" class="img-fluid"></div>
+      <div class="logo-item"><img src="images/tools-svg/clickUp.svg" class="img-fluid"></div>
+      <div class="logo-item"><img src="images/tools-svg/illustrator.svg" class="img-fluid"></div>
+      <div class="logo-item"><img src="images/tools-svg/miro.svg" class="img-fluid"></div>
+      <div class="logo-item"><img src="images/tools-svg/notion.svg" class="img-fluid"></div>
+      <div class="logo-item"><img src="images/tools-svg/slack.svg" class="img-fluid"></div>
+      <div class="logo-item"><img src="images/tools-svg/Jira.svg" class="img-fluid"></div>
+      <div class="logo-item"><img src="images/tools-svg/photoshop.svg" class="img-fluid"></div>
+    </div>
+  </div>
+</div>
+
+
       <!-- BEGIN Project  -->
       <section class="project-section" id="project-section">
         <div class="container">
@@ -164,13 +195,13 @@
                         <span class="gsap-reveal">
                           <div>
                               <div class="project-category">Project 1</div>
-                              <h2 class="project-title">Baguette</h2>
+                              <h2 class="project-title">Amaia</h2>
                           </div>
                           <div class="project-metadata">
                               <div class="d-flex flex-wrap">
                                   <div class="metadata-item">
                                       <div class="metadata-label">CLIENT</div>
-                                      <div class="metadata-value">Astudio</div>
+                                      <div class="metadata-value">Creed and Bear</div>
                                   </div>
                                   <div class="metadata-item">
                                       <div class="metadata-label">YEAR</div>
@@ -189,7 +220,7 @@
                 </div>
                 <div class="col-lg-6 project-image-container">
                     <div class="project-image gsap-reveal-img">
-                        <img src="document/project1_cover.png" alt="Project Preview">
+                        <img src="document/Cover amaia.png" alt="Project Preview">
                     </div>
                 </div>
             </div>
@@ -202,13 +233,13 @@
                         <span class="gsap-reveal">
                           <div>
                               <div class="project-category">Project 2</div>
-                              <h2 class="project-title">Amaia</h2>
+                              <h2 class="project-title">Baguette</h2>
                           </div>
                           <div class="project-metadata">
                               <div class="d-flex flex-wrap">
                                   <div class="metadata-item">
                                       <div class="metadata-label">CLIENT</div>
-                                      <div class="metadata-value">Creed and Bear</div>
+                                      <div class="metadata-value">Astudio</div>
                                   </div>
                                   <div class="metadata-item">
                                       <div class="metadata-label">YEAR</div>
@@ -227,7 +258,7 @@
                 </div>
                 <div class="col-lg-6 project-image-container order-lg-1">
                     <div class="project-image gsap-reveal-img">
-                        <img src="document/Cover amaia.png" alt="Project Preview">
+                        <img src="document/project1_cover.png" alt="Project Preview">
                     </div>
                 </div>
             </div>
@@ -686,6 +717,17 @@
 
     <script src="js/scripts-dist.js"></script>
     <script src="js/main.js"></script>
+    <canvas id="myCanvas" width="400" height="300"></canvas>
+    <script>
+      const canvas = document.getElementById('myCanvas');
+      const ctx = canvas.getContext('2d');
+      const img = new Image();
+      img.onload = function () {
+        ctx.drawImage(img, 0, 0);
+      };
+      img.src = 'image.jpg';
+    </script>
+
 
   </body>
 </html>
