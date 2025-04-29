@@ -2333,11 +2333,10 @@ span.error {
 .logo-item {
   flex-shrink: 0;
   width: 150px;
-  height: 150px;
+  height: 100px;
   text-align: center;
   padding: 1rem;
-  margin: 40px;
-  margin-bottom: 30px !important;
+  margin: 20px;
 }
 
 @keyframes scrollLinear {
@@ -2352,7 +2351,7 @@ span.error {
 @media (max-width: 768px) {
   .logo-item {
     width: 100px;
-    height: 100px;
+    height: 70px;
     padding: 0.5rem;
     margin: 10px;
   }
