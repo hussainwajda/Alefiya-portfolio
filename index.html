@@ -693,24 +693,26 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    const footer = document.querySelector('.unslate_co--footer');
-  
-    function checkIfBottom() {
-      const scrollTop = window.scrollY || window.pageYOffset;
-      const viewportHeight = window.innerHeight;
-      const fullHeight = document.documentElement.scrollHeight;
-  
-      if (scrollTop + viewportHeight >= fullHeight - 220) { 
-        footer.classList.add('active');
-      } else {
-        footer.classList.remove('active');
-      }
+  const footer = document.querySelector('.unslate_co--footer');
+  const contactSection = document.querySelector('#contact-section'); // Adjust selector if needed
+  const tolerance = 400; // px
+
+  function checkIfContactBottomVisible() {
+    if (!contactSection) return;
+    const rect = contactSection.getBoundingClientRect();
+    // rect.bottom - tolerance <= window.innerHeight means
+    // the user has scrolled 'tolerance' px past the bottom of the contact section
+    if (rect.bottom + tolerance <= window.innerHeight) {
+      footer.classList.add('active');
+    } else {
+      footer.classList.remove('active');
     }
-  
-    window.addEventListener('scroll', checkIfBottom);
-    window.addEventListener('resize', checkIfBottom);
-    checkIfBottom(); // Check on load too
-  });
+  }
+
+  window.addEventListener('scroll', checkIfContactBottomVisible);
+  window.addEventListener('resize', checkIfContactBottomVisible);
+  checkIfContactBottomVisible(); // Run on load
+});
   </script>
   </body>
 </html>
