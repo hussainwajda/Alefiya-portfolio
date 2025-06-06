@@ -7,6 +7,7 @@ body {
   font-weight: 300;
   position: relative;
   overflow-x: hidden;
+  margin-bottom: 0 !important;
 }
 
 body:before {
@@ -72,23 +73,32 @@ a, a:hover {
 }
 
 .unslate_co--footer {
-  position: fixed !important;
+  position: fixed;
   width: 100%;
   background-color: #191919;
   color: #fff;
   left: 0;
   right: 0;
   bottom: 0px;
-  z-index: -1;
   height: 400px;
+  z-index: 0; /* default */
 }
 
-@media (max-width: 991.98px) {
-  .unslate_co--footer {
-    height: auto !important;
-    position: relative !important;
-  }
+.unslate_co--footer a {
+  pointer-events: none; /* disable links */
+  opacity: 0.6; /* optional - make links look inactive */
 }
+
+.unslate_co--footer.active {
+  z-index: 1;
+}
+
+.unslate_co--footer.active a {
+  pointer-events: auto; /* enable links */
+  opacity: 1;
+  font-weight: 1000 !important;
+}
+
 
 .btn {
   font-size: 11px;
@@ -229,7 +239,7 @@ a, a:hover {
 }
 
 .unslate_co--site-nav .site-nav-ul > li > a:hover, .unslate_co--site-nav .site-nav-ul-none-onepage > li > a:hover {
-  color: #fff;
+  color: #D63447;
 }
 
 .unslate_co--site-nav .site-nav-ul > li > a:hover:before, .unslate_co--site-nav .site-nav-ul-none-onepage > li > a:hover:before {
