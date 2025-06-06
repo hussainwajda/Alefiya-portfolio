@@ -61,8 +61,8 @@
                   <a href="#home-section" class="nav-link">Home</a>
   
                 </li>
-                <li><a href="#about-section" class="nav-link">About</a></li>
                 <li><a href="#project-section" class="nav-link">Projects</a></li>
+                <li><a href="#about-section" class="nav-link">About</a></li>
               </ul>
             </div>
             <div class="site-logo pos-absolute">
@@ -325,8 +325,8 @@
             </div>
             <div class="col-lg-5 pr-lg-5">
               <h3 class="mb-4 heading-h3"><span class="gsap-reveal">We can make it together</span></h3>
-              <p class="lead gsap-reveal">I am a <span style="font-weight: 900 !important; color: #ff2807;"> UX/UI designer, researcher, and design strategist </span> specializing in user-centered design, usability analysis, 
-                and interaction design for <span style="font-weight: 900 !important;">Fintech, Web3, and Fintech </span>applications. I translate complex systems into intuitive digital experiences through a methodical approach grounded in heuristic evaluation,
+              <p class="lead gsap-reveal">I am a <span style="font-weight: 900 !important;"> UX/UI designer, researcher, and design strategist </span> specializing in user-centered design, usability analysis, 
+                and interaction design for <span style="font-weight: 900 !important;">Fintech, Web3, and Logistics </span>applications. I translate complex systems into intuitive digital experiences through a methodical approach grounded in heuristic evaluation,
                  information architecture, and interaction modeling. 
               </p>
               <p class="mb-4 gsap-reveal">Proficient in tools like<span style="font-weight: 900 !important;"> Figma, Sketch, Adobe Creative Suite</span>, and prototyping and research platforms, I craft high-fidelity design systems and interactive prototypes.
@@ -700,8 +700,7 @@
       const viewportHeight = window.innerHeight;
       const fullHeight = document.documentElement.scrollHeight;
   
-      if (scrollTop + viewportHeight >= fullHeight - 200) { 
-        // Near bottom (with 10px tolerance)
+      if (scrollTop + viewportHeight >= fullHeight - 220) { 
         footer.classList.add('active');
       } else {
         footer.classList.remove('active');
