@@ -695,7 +695,12 @@
   document.addEventListener('DOMContentLoaded', function() {
   const footer = document.querySelector('.unslate_co--footer');
   const contactSection = document.querySelector('#contact-section'); // Adjust selector if needed
-  const tolerance = 400; // px
+  let tolerance;
+  if (screen.width < 960) {
+    tolerance = 30;
+  }else{
+    tolerance = 300;
+  }
 
   function checkIfContactBottomVisible() {
     if (!contactSection) return;
