@@ -860,6 +860,56 @@ document.addEventListener('DOMContentLoaded', function() {
 	}
   }
   
+  // Sticky Breadcrumb functionality
+var stickyBreadcrumb = function() {
+    var breadcrumb = $('.project-breadcrumb-sticky');
+    
+    if (breadcrumb.length === 0) return;
+    
+    var breadcrumbOffset = breadcrumb.offset().top;
+    var heroSection = $('.cover-v1, #hero-section').first();
+    var heroHeight = heroSection.length ? heroSection.outerHeight() : $(window).height();
+    
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        
+        if (scroll >= heroHeight - 100) {
+            // Make it sticky and centered
+            breadcrumb.addClass('stuck');
+            breadcrumb.removeClass('left-align');
+        } else {
+            // Back to initial position
+            breadcrumb.removeClass('stuck');
+            // Optionally add left-align class for initial positioning
+            // breadcrumb.addClass('left-align');
+        }
+    });
+};
+
+// Add this to your existing jQuery ready function
+jQuery(function($) {
+    'use strict';
+    
+    // Your existing functions...
+    loader();
+    siteMenuClone();
+    mobileToggleClick();
+    onePageNavigation();
+    siteIstotope();
+    portfolioItemClick();
+    owlCarouselPlugin();
+    floatingLabel();
+    scrollWindow();
+    counter();
+    jarallaxPlugin();
+    stickyFillPlugin();
+    animateReveal();
+    
+    // Add the sticky breadcrumb functionality
+    stickyBreadcrumb();
+});
+
+
   PointerParticles.register();
   
 

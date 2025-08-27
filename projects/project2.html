@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="../css/vendor/aos.css">
     <link rel="stylesheet" href="../css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="../css/vendor/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     
 
     <!-- Theme Style -->
@@ -50,15 +52,29 @@
         </div> -->
         <!-- END lines -->
       
-      <div class="cover-v1 jarallax" style="background-image: url('../images/grid\ white\ 1.png');" id="home-section">
-        <div class="container">
-          <div class="row align-items-center">
-              
+      <div class="cover-v1 jarallax" style="background-image: url('../images/grid white 1.png');" id="home-section">
+        <!-- Sticky Breadcrumb Navigation -->
+        <nav class="unslate_co--site-nav site-nav-target">
+          <div class="row align-items-center justify-content-start text-right">
+            <div class="col-md-5 text-right text-lg-left">
+              <ul class="site-nav-ul js-clone-nav ml-4 text-left">
+                <li class="breadcrumb-item">
+                  <a href="../index.html">
+                    <i style="font-size:20px; vertical-align:middle;" class="fa mr-1">&#xf015;</i> Home
+                  </a>
+                </li>
+                <li class="breadcrumb-item active text-primary" aria-current="page">SF Chat</li>
+              </ul>
+              <!-- Removed mobile menu option, only breadcrumb remains -->
+            </div>
+          </div>
+        </nav>
+        <div class="container position-relative" style="z-index: 2;">
+          <div class="row align-items-center" style="min-height: 250px;">
             <div class="col-md-7 mx-auto text-center">
               <h1 class="heading gsap-reveal-hero">SF Chat</h1>
               <h2 class="subheading gsap-reveal-hero"><span class="text-primary">2024</span></h2>
             </div>
-
           </div>
         </div>
         <a href="#main-section" class="mouse-wrap smoothscroll">
@@ -111,6 +127,47 @@
 
     <script src="../js/scripts-dist.js"></script>
     <script src="../js/main.js"></script>
+    <!-- Sticky Breadcrumb Script -->
+    <script>
+      (function() {
+        var breadcrumb = document.getElementById('projectBreadcrumb');
+        var lastScrollTop = window.scrollY;
+        var stuck = false;
+        var offset = breadcrumb ? breadcrumb.offsetTop + 40 : 40;
+        var ticking = false;
+        function updateBreadcrumb() {
+          var st = window.scrollY;
+          if (st > offset) {
+            if (!stuck) {
+              breadcrumb.classList.add('stuck');
+              breadcrumb.classList.remove('left-align');
+              stuck = true;
+            }
+            // Only show when scrolling up
+            if (st < lastScrollTop) {
+              breadcrumb.classList.add('show-breadcrumb');
+            } else {
+              breadcrumb.classList.remove('show-breadcrumb');
+            }
+          } else {
+            breadcrumb.classList.remove('stuck');
+            breadcrumb.classList.remove('show-breadcrumb');
+            breadcrumb.classList.add('left-align');
+            stuck = false;
+          }
+          lastScrollTop = st;
+        }
+        window.addEventListener('scroll', function() {
+          if (!ticking) {
+            window.requestAnimationFrame(function() {
+              updateBreadcrumb();
+              ticking = false;
+            });
+            ticking = true;
+          }
+        });
+      })();
+    </script>
 
 </body>
 </html>

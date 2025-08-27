@@ -1,0 +1,78 @@
+/* Sticky Breadcrumb Styles for Project Pages */
+.project-breadcrumb-sticky {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center; /* Center by default */
+    transition: background 0.3s, box-shadow 0.3s, padding 0.3s, justify-content 0.3s;
+    background: transparent; /* Start transparent */
+    padding-top: 2rem;
+    pointer-events: auto; /* Enable interactions */
+}
+
+.project-breadcrumb-sticky.left-align {
+    justify-content: flex-start;
+    padding-left: 2.5rem;
+}
+
+.project-breadcrumb-sticky.stuck {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff; /* White background when stuck */
+    box-shadow: 0 2px 16px 0 rgba(0,0,0,0.07);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    justify-content: center;
+    opacity: 1; /* Always visible when stuck */
+    transition: background 0.3s, box-shadow 0.3s, padding 0.3s, justify-content 0.3s, opacity 0.3s;
+}
+
+.project-breadcrumb-sticky .breadcrumb {
+    background: transparent;
+    margin-bottom: 0;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    box-shadow: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+    color: #fff; /* White text initially */
+}
+
+.project-breadcrumb-sticky.stuck .breadcrumb {
+    color: #222; /* Dark text when stuck */
+}
+
+.project-breadcrumb-sticky .breadcrumb-item a {
+    color: inherit;
+    font-weight: 600;
+}
+
+.project-breadcrumb-sticky .breadcrumb-item.active {
+    color: #D63447;
+    font-weight: 700;
+}
+
+/* Mobile responsive */
+@media (max-width: 767.98px) {
+    .project-breadcrumb-sticky {
+        padding-top: 1rem;
+    }
+
+    .project-breadcrumb-sticky.left-align {
+        padding-left: 1rem;
+    }
+
+    .project-breadcrumb-sticky.stuck {
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+    }
+
+    .project-breadcrumb-sticky .breadcrumb {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}
